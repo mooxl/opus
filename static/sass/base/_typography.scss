@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "frankie";
+    src: url("/font/frankRuhlLibre-Light.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "frankie";
+    src: url("/font/frankRuhlLibre-Regular.ttf");
+    font-weight: bold;
+}
+
+.heading {
+    &__welcome {
+        color: white;
+        font-weight: 200;
+        line-height: 8rem;
+
+        &--primary {
+            font-size: 8rem;
+        }
+
+        &--secondary {
+            font-size: 6rem;
+        }
+    }
+
+    &__about {
+        font-size: 5rem;
+    }
+
+    &__samples {
+        color: white;
+        font-weight: 300;
+        font-size: 7rem;
+    }
+
+    &__dates {
+        font-weight: 300;
+        font-size: 7rem;
+    }
+
+    &__upcoming {
+        font-size: 3rem;
+    }
+
+    &__musicians {
+        font-size: 7rem;
+        color: white;
+    }
+
+    &__musician {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    &__quote {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    &__press {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+
+    &__contact {
+        font-size: 7rem;
+        font-weight: 200 !important;
+        color: white;
+    }
+
+    &__impressum {
+        font-size: 4rem;
+        font-weight: 200 !important;
+        color: white;
+    }
+}
+
+.paragraph {
+    &__welcome {
+        color: white;
+        font-size: 2rem;
+    }
+
+    &__about {
+        font-size: 2rem;
+    }
+
+    &__quote {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    &__upcoming {
+        font-size: 1.8rem;
+    }
+
+    &__press {
+        font-size: 2.5rem;
+    }
+
+    &__contact {
+        color: white;
+        font-size: 2rem;
+    }
+
+    &__impressum {
+        color: white;
+        font-size: 1.6rem;
+    }
+    &__musician {
+        font-size: 1.8rem;
+    }
+
+    &__name {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .paragraph {
+        &__quote {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+    }
+}

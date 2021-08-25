@@ -1,0 +1,25 @@
+.row {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    justify-items: inherit;
+    align-items: inherit;
+    align-content: inherit;
+    flex-wrap: inherit; 
+    height: inherit;
+}
+
+@media only screen and (max-width: 1120px) {
+    .row {
+        width: calc(100% - 10rem);
+        margin: 0 5rem;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .row {
+        width: calc(100% - 4rem);
+        margin: 0 2rem;
+    }
+}

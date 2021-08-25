@@ -1,0 +1,16 @@
+.press {
+    padding: 10rem 0;
+    &__container {
+        margin: 10rem 0;
+        &--heading {
+            margin-bottom: 4rem;
+        }
+        &--quotes {
+            & p {
+                &:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}

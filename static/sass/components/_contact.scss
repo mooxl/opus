@@ -1,0 +1,46 @@
+.contact {
+    background-color: $colorContactBlue;
+
+    &__container {
+        padding: 5rem 0 8rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        &--heading {
+            flex-basis: 100%;
+            margin-bottom: 3rem;
+        }
+
+        &--image {
+            flex-basis: 50%;
+
+            & img {
+                width: 90%;
+            }
+        }
+
+        &--text {
+            align-self: center;
+            flex-basis: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact {    
+        &__container {
+            &--image {
+                flex-basis: 100%;
+                margin-bottom: 2rem;
+                & img {
+                    width: 100%;
+                }
+            }
+    
+            &--text {
+                align-self: center;
+                flex-basis: 100%;
+            }
+        }
+    }
+}

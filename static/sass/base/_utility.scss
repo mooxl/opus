@@ -1,0 +1,10 @@
+.vertical-centered {
+    position: absolute;
+    max-width: 100rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.text-centered {
+    text-align: center;
+}

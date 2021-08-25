@@ -1,0 +1,114 @@
+#navigation {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5rem;
+    z-index: 100;
+    overflow: hidden;
+    transition: all .2s;
+
+}
+
+.navigation {
+    background-color: $colorNavBlue;
+    height: inherit;
+    width: 100%;
+
+    &__middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: inherit;
+
+        &--links {
+            display: flex;
+
+            &-link {
+                color: white;
+                padding: 0 2rem;
+                font-size: 2rem;
+                font-weight: 200;
+                letter-spacing: .1rem;
+                text-decoration: none;
+
+                cursor: pointer;
+
+                &:last-child {
+                    padding-right: 0;
+                }
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &--burgerMenu {
+            position: relative;
+            display: none;
+            height: 5rem;
+            width: 4rem;
+            transition: all .2s;
+            cursor: pointer;
+            
+            &-burger {
+                transition: all .2s;
+                position: absolute;
+                background-color: gray;
+                width: 100%;
+                height: .35rem;
+
+                &-1 {
+                    top: 30%;
+
+                    &.change {
+                        transform: rotate(-45deg) translate(-2px, 2px);
+                    }
+                }
+
+                &-2 {
+                    top: 45%;
+
+                    &.change {
+                        opacity: 0;
+                    }
+                }
+
+                &-3 {
+                    top: 60%;
+
+                    &.change {
+                        transform: rotate(45deg) translate(-8px, -8px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .navigation {
+        &__middle {
+            align-items: flex-start;
+            &--links {
+                position: absolute;
+                top: 6rem;
+                flex-wrap: wrap;
+                text-align: center;
+                &-link {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            &--burgerMenu {
+                display: block;
+                width: 3rem;
+            }
+        }
+    }
+    .subNav {
+        top: 1rem !important;
+    }
+}

@@ -1,0 +1,334 @@
+{{template "head" .}}
+<section id="navigation">
+    <nav class="navigation">
+        <div class="row">
+            <div class="navigation__middle">
+                <div class="navigation__middle--burgerMenu">
+                    <div class="navigation__middle--burgerMenu-burger navigation__middle--burgerMenu-burger-1">
+                    </div>
+                    <div class="navigation__middle--burgerMenu-burger navigation__middle--burgerMenu-burger-2">
+                    </div>
+                    <div class="navigation__middle--burgerMenu-burger navigation__middle--burgerMenu-burger-3">
+                    </div>
+                </div>
+                <div class="navigation__middle--links">
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#about">About</a>
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#samples">Samples</a>
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#dates">Dates</a>
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#musicians">Musicians</a>
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#contact">Contact</a>
+                    <a class="navigation__middle--links-link" onclick="toggleF()" href="#impressum">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="parallax">
+    <div class="parallax__front">
+        <div class="welcome">
+            <div class="row">
+                <div class="welcome__container">
+                    <div class="welcome__container--subHeading">
+                        <h2 class="heading__welcome heading__welcome--secondary">Trio</h2>
+                    </div>
+                    <div class="welcome__container--heading">
+                        <h2 class="heading__welcome heading__welcome--primary">Opus 3</h2>
+                    </div>
+                    <div class="welcome__container--paragraph">
+                        <p class="paragraph__welcome">
+                            Piano: Melanie Reinhard
+                            <br>
+                            Violine: Christopher White
+                            <br>
+                            Cello: Jonas Seeberg
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome__about" id="about">
+            </div>
+        </div>
+    </div>
+    <div class="parallax__back">
+        <div class="about">
+            <div class="row">
+                <div class="about__container">
+                    <h1 class="heading__about about__container--heading">About</h1>
+                    <p class="paragraph__about about__container--paragraph">
+                        Opus 3 have been performing together for more than fifteen years since meeting in Zurich
+                        in 1996. Inspired by the overwhelming masterworks of Beethoven, Schubert, Mozart, and
+                        others, these performers with very diverse backgrounds, came together because of the
+                        shared
+                        passion to perform music in a unique way.
+                        <br><br>
+                        While being known for the special homogeneity of their playing, they also regularly try
+                        to
+                        include in their programmes rarely heard duo and solo works as well as quartets and
+                        quintets
+                        with invited guest artists.
+                    </p>
+                    <img class="about__container--image" src="img/about.jpg" alt="violine">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax__front">
+        <div class="group">
+            <div class="group__container">
+            </div>
+        </div>
+    </div>
+    <div class="parallax__back">
+        <div class="quote">
+            <div class="row">
+                <div class="quote__container">
+                    <p class="paragraph__quote">
+                        „The thick texture of violin and cello was telling, and the piano added its glowing melodic
+                        layer and power; each dance had its character, and was played with plenty of panache and
+                        intensity.“
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax__front">
+        <div class="samples" id="samples">
+            <div class="row">
+                <div class="samples__container">
+                    <h1 class="samples__container--heading heading__samples">Samples</h1>
+                    <div class="samples__container--mp3 samples__container--mp3-brahms">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Brahms
+                        </p>
+                        <audio controls>
+                            <source src="music/brahmCDurSatz1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-brahms">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Brahms
+                        </p>
+                        <audio controls>
+                            <source src="music/brahmCMaj.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-schubert">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Schubert
+                        </p>
+                        <audio controls>
+                            <source src="music/SchubertSatz1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-schubert">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Schubert
+                        </p>
+                        <audio controls>
+                            <source src="music/SchubertSatz2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-dvorak">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Dvorak
+                        </p>
+                        <audio controls>
+                            <source src="music/dvorakDumkySatz4.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-shostakovich">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Shostakovich
+                        </p>
+                        <audio controls>
+                            <source src="music/Shostakovich2Satz1.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-shostakovich">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Shostakovich
+                        </p>
+                        <audio controls>
+                            <source src="music/Shostakovich2Satz3.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="samples__container--mp3 samples__container--mp3-ravel">
+                        <p class="samples__container--mp3-text paragraph__name">
+                            Ravel
+                        </p>
+                        <audio controls>
+                            <source src="music/ravelSonateViolineCello.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dates">
+            <div class="row">
+                <div class="dates__container">
+                    <h1 class="dates__container--heading heading__dates">Dates</h1>
+                    <img class="dates__container--image" src="img/upcoming.jpg" alt="TrioOpus">
+                </div>
+            </div>
+        </div>
+        <div class="upcoming__nav" id="dates"></div>
+    </div>
+    <div class="parallax__back">
+        <div class="upcoming">
+            <div class="row">
+                <div class="upcoming__container">
+                    <div class="upcoming__container--heading heading__upcoming">Upcoming Concerts</div>
+                    <div class="upcoming__container--concert">
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>Where: </b>Manchester, Altrincham Baptist Church,
+                                Festival Fresco</p>
+                        </div>
+                        <div class="upcoming__container--concert-item text-centered">
+                            <p class="paragraph__upcoming"><b>When: </b>06.–09.06.2019</p>
+                        </div>
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>What: </b>Christopher White & Melanie Reinhard perform
+                                Vivaldi’s Four Seasons, Mozart’s
+                                Clarinet Quintet, Cesar Franck’s Sonata in A-Major</p>
+                        </div>
+                    </div>
+                    <div class="upcoming__container--concert">
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>Where: </b>Aachen, Opening Concert of the Chorbiennale
+                                Aachen</p>
+                        </div>
+                        <div class="upcoming__container--concert-item text-centered">
+                            <p class="paragraph__upcoming"><b>When: </b>12.06.2019</p>
+                        </div>
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>What: </b>Jonas Seeberg & Der junge Chor Aachen,
+                                conducted by Prof. Fritz Ter Wey perform Knut Nystedt´s Stabat Mater for Cello
+                                solo and choir</p>
+                        </div>
+                    </div>
+                    <div class="upcoming__container--concert">
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>Where: </b>Great Bowden Music Fest</p>
+                        </div>
+                        <div class="upcoming__container--concert-item text-centered">
+                            <p class="paragraph__upcoming"><b>When: </b>03.–07.07.2019</p>
+                        </div>
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>What: </b>Trio Opus 3 performs Schubert´s Piano Trio
+                                in
+                                E-Flat Op.100, Beethoven´s ‚Harp Quartett‘ Op.74, Mendelssohn´s Octet, Beethoven’s
+                                Violin Sonata in G-Major Op. 96/10, Schubert’s Sonata in A-Major „Arpeggione" for
+                                Cello and Piano</p>
+                        </div>
+                    </div>
+                    <div class="upcoming__container--concert">
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>Where: </b>Prerow, Kirche</p>
+                        </div>
+                        <div class="upcoming__container--concert-item text-centered">
+                            <p class="paragraph__upcoming"><b>When: </b>25.07.2019</p>
+                        </div>
+                        <div class="upcoming__container--concert-item">
+                            <p class="paragraph__upcoming"><b>What: </b>Jonas Seeberg performs Bach´s Cello Suite
+                                No.
+                                2, Gabrielli´s Ricercar No. 1, Zoltan Kodaly´s Cello Sonata Op. 8</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax__front">
+        <div class="musicians" id="musicians">
+            <div class="row">
+                <div class="musicians__container">
+                    <div class="musicians__container--heading heading__musicians">Musicians</div>
+                    <div class="musicians__container--musician">
+                        <a href="/musician?name=melanie">
+                            <img src="img/melanie.jpg" alt="">
+                        </a>
+                        <a href="/musician?name=chris">
+                            <img src="img/chris.jpg" alt="">
+                        </a>
+                        <a href="/musician?name=jonas">
+                            <img src="img/jonas.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax__back">
+        <div class="press">
+            <div class="row">
+                <div class="press__container">
+                    <div class="press__container--heading">
+                        <h1 class="heading__press">Press</h1>
+                    </div>
+                    <div class="press__container--quotes">
+                        <p class="paragraph__press">
+                            “Dvorák's 'Dumky’ trio... here the glowing tone and finely articulated textures were
+                            ravishing.”
+                        </p>
+                        <p class="paragraph__press">
+                            “From the first bars of Brahms' Trio Op 87 another sound-world: dark, chromatic,
+                            passionate, at times achingly nostalgic.”.
+                        </p>
+                        <p class="paragraph__press">
+                            “The group's account of Schubert's Piano Trio in B ﬂat Op 99
+                            to conclude was full of magical highpoints and ravishing sonorities.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax__front">
+        <div class="contact" id="contact">
+            <div class="row">
+                <div class="contact__container">
+                    <div class="contact__container--heading heading__contact">
+                        <h1 class="heading__contact">Contact</h1>
+                    </div>
+                    <div class="contact__container--image">
+                        <img src="img/contact.jpg" alt="Trio Opus">
+                    </div>
+                    <div class="contact__container--text">
+                        <p class="paragraph__contact">
+                            We will be happy to hear from you!
+                            <br><br>
+                            No matter whether you have questions, want to order CD´s, or arrange a recital as trio
+                            or
+                            individually, we will answer your E-Mail as quick as possible.
+                            <br><br>
+                            contact@trio-opus-3.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="impressum" id="impressum">
+            <div class="row">
+                <div class="impressum__container">
+                    <div class="impressum__container--heading">
+                        <h1 class="heading__impressum">Impressum</h1>
+                    </div>
+                    <div class="impressum__container--text">
+                        <p class="paragraph__impressum">
+                            Responsible for all content: Melanie Reinhard, Christopher White, Jonas Seeberg
+                            <br>
+                            Located in Great Bowden, UK & Leipzig, Germany
+                            <br>
+                            Contact: contact@trio-opus-3.com
+                            <br>
+                            Design: Alina Seeberg<br>
+                            Made with love by mooxl
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{template "scripts" .}}

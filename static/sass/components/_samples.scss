@@ -1,0 +1,97 @@
+.samples {
+    background-color: $colorSamplesBlue;
+    box-shadow: 0 -.2rem 1rem rgba(black, 0.5);
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 5rem 0;
+
+        &--heading {
+            flex-basis: 100%;
+            margin-bottom: 3rem;
+        }
+
+        &--mp3 {
+            flex-basis: calc(25% - 3rem);
+            margin-bottom: 4rem;
+            position: relative;
+
+            &>* {
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+            }
+
+            &:before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+
+            &-text {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: auto;
+                height: 4rem;
+                padding: 1rem 2rem;
+                background-color: rgba(black, 0.6);
+                color: white;
+            }
+
+            &-ravel {
+                background-image: url("../img/samples/ravel.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-brahms {
+                background-image: url("../img/samples/brahms.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-schubert {
+                background-image: url("../img/samples/schubert.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-dvorak {
+                background-image: url("../img/samples/dvorak.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            &-shostakovich {
+                background-image: url("../img/samples/shostakovich.png");
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .samples {
+        &__container {
+            &--mp3 {
+                &-text {
+                    height: 3rem;
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .samples {
+        &__container {
+            &--mp3 {
+                flex-basis: calc(50% - 2rem);
+            }
+        }
+    }
+}

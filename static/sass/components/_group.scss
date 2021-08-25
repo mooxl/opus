@@ -1,0 +1,12 @@
+.group {
+    &__container{
+        margin: 0 2rem;
+        background-image: url("/img/group.jpg");
+        background-size: cover;
+        background-position: top;
+        height: 100vh;
+        box-shadow: 0 0 1rem rgba(black, 0.9);
+
+    }
+    
+}

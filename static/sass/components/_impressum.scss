@@ -1,0 +1,17 @@
+.impressum {
+    background-color: $colorBrown;
+    padding: 3rem 0;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        &--heading {
+            flex-basis: 100%;
+        }
+        &--text {
+            align-self: center;
+            flex-basis: 100%;
+
+        }
+    }
+
+}

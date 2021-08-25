@@ -1,0 +1,15 @@
+.dates {
+    /* box-shadow: 1rem 0 1rem rgba(black, 0.9); */
+    z-index: 100 !important;
+    /* background-color: white; */
+    background-image: linear-gradient( white 50%, transparent 80%);
+    &__container {
+        padding: 5rem 0 0 0;
+        &--heading {
+            margin-bottom: 3rem;
+        }
+        &--image {
+            width: 100%;
+        }
+    }
+}

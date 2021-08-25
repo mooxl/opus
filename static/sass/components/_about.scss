@@ -1,0 +1,33 @@
+.about {
+    padding: 10rem 0 30rem 0;
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &--heading {
+            flex-basis: 100%;
+        }
+        &--paragraph {
+            flex-basis: 45%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        &--image {
+            width: 50%;
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .about {
+        &__container {
+            &--paragraph {
+                flex-basis: 100%;
+            }
+            &--image {
+                display: none;
+            }
+        }
+    }
+}

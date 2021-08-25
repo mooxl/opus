@@ -1,0 +1,30 @@
+{{template "head" .}}
+<section id="navigation">
+    <nav class="navigation">
+        <div class="row">
+            <div class="navigation__middle">
+                <div class="navigation__middle--links subNav">
+                    <a class="navigation__middle--links-link" href="/">Home</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+<section id="musician">
+    <div class="row">
+        <div class="musician">
+            <h1 class="musician__heading heading__musician">
+                {{.Name}} | {{.Instrument}}
+            </h1>
+            <p class="musician__text paragraph__musician">
+                {{.Text}}
+            </p>
+            <img src="{{.Path}}" alt="Chris White" class="musician__image">
+            <h2 class="musician__quote heading__quote">
+                "{{.Quote}}"
+            </h2>
+            <p class="musician__source paragraph__musician">{{.From}}</p>
+        </div>
+    </div>
+</section>
+{{template "scripts" .}}

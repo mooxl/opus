@@ -1,0 +1,33 @@
+.upcoming {
+    padding: 10rem 0 40rem 0;
+    &__container {
+        &--concert {
+            width: 100%;
+            display: flex;
+            margin-top: 5rem;
+            justify-content: space-between;
+            &-item {
+                &:nth-child(2) {
+                    text-align: center;
+                }
+                width: 33%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .upcoming {
+        &__container {
+            &--concert {
+                flex-wrap: wrap;
+                &-item {
+                    &:nth-child(2) {
+                        text-align: left;
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
