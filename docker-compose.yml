@@ -7,15 +7,3 @@ services:
     container_name: trioopus
     restart: unless-stopped
     build: .
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.trioopus.rule=Host(`www.trio-opus-3.com`) || Host(`trio-opus-3.com`)"
-      - "traefik.http.routers.trioopus.entrypoints=https"
-      - "traefik.http.routers.trioopus.tls.certresolver=cloudflare"
-    networks:
-      - traefik_network
-
-networks:
-  traefik_network:
-    external: true
-
